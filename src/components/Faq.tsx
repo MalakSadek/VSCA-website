@@ -46,11 +46,11 @@ const faqdata = [
   {
     question: "What is your refund policy? ",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "If you&apos;re unhappy with your purchase for any reason, email us within 90 days and we&apos;ll refund you in full, no questions asked.",
   },
   {
     question: "Do you offer technical support? ",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "No, we don&apos;t offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
   },
 ];
