@@ -13,7 +13,7 @@ export default function About() {
         
         <div className="mt-10 space-y-6 text-lg text-gray-600 dark:text-gray-300">
           <p>
-            The VSCA framework was born out of a Ph.D. project at Imperial College London. Originally, the work was about making conversational AI more human-centred. As the project went on, one idea that kept coming up repeatedly was whether the project's outcomes would make concrete and measurable 'real-world' impact. With the goal of avoiding being just another thesis put on a shelf, the VSCA Framework was born to bridge the gap between research and practice.
+            The VSCA framework was born out of a Ph.D. project at Imperial College London. Originally, the work was about making conversational AI more human-centred. As the project went on, one idea that kept coming up repeatedly was whether the project&apos;s outcomes would make concrete and measurable &apos;real-world&apos; impact. With the goal of avoiding being just another thesis put on a shelf, the VSCA Framework was born to bridge the gap between research and practice.
           </p>
           <p>
             It is based on years of research and grounded in scientific theories and findings, but it is also the result of inputs from countless conversational AI professionals who shared their experiences, struggles, and dreams.
