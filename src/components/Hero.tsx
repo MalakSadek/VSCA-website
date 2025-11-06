@@ -26,6 +26,7 @@ export const Hero = () => {
               height="617"
               alt="Design Conversational AI that Aligns with People&apos;s Values"
               loading="eager"
+              className={"object-cover rounded-3xl"}
             />
           </div>
         </div>
