@@ -11,11 +11,11 @@ const testimonials = [
     author: "Conversational AI Consultant",
   },
   {
-    quote: "We could really go through and see which values we&apos;ve considered and where, and then make changes as needed.",
+    quote: "We could really go through and see which values we've considered and where, and then make changes as needed.",
     author: "Co-Founder",
   },
   {
-    quote: "I&apos;m confident the team is more aware of our values and of the things that they could do or not do to affect these values.",
+    quote: "I'm confident the team is more aware of our values and of the things that they could do or not do to affect these values.",
     author: "Conversational AI User",
   },
   {
