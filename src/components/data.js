@@ -1,57 +1,61 @@
 import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
+  ChatBubbleLeftRightIcon,
+  UserGroupIcon,
+  ShieldCheckIcon,
+  WrenchScrewdriverIcon,
+  AcademicCapIcon,
+  ArrowTrendingUpIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../../public/img/benefit-one.png";
-import benefitTwoImg from "../../public/img/benefit-two.png";
+// Images from public folder
+const benefitOneImg = "/IMG_8409.jpeg";
+const benefitTwoImg = "/IMG_8400.jpeg";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "The VSCA Framework",
+  desc: "The VSCA Framework (Value-Sensitive Conversational Agent Framework) is here to help you and your team develop conversational agents (software that users interact with through conversation, such as chatbots, including those based on Large Language Models, voice assistants, and so on) that align with the values of all the stakeholders involved (also called value-sensitive conversational agents).",
   image: benefitOneImg,
+  link: {
+    text: "Learn about how we work",
+    href: "/about",
+  },
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
+      title: "Stakeholder-Centered",
+      desc: "Stakeholders are anyone with 'stake' in the conversational agent. I.e. anyone who is responsible for creating it, cares about it, is impacted by it, or benefits from it.",
+      icon: <UserGroupIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
+      title: "Value-Driven",
+      desc: "Values are concepts that are important to people or that they believe in such as trust, autonomy, transparency, and privacy.",
+      icon: <ShieldCheckIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
+      title: "Inclusive Design",
+      desc: "That means that your conversational agents will respect and uphold the values of the people directly and indirectly involved in creating it and are being affected by it (this includes your users of course!).",
+      icon: <ChatBubbleLeftRightIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "A Practical Toolkit",
+  desc: "While a 'framework' sounds generic and abstract, what it really represents is a number of activities that you can build into existing design processes and workflows to adapt and centre them around stakeholders' values.",
   image: benefitTwoImg,
+  link: {
+    text: "Learn how to get involved",
+    href: "/get-involved",
+  },
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
+      title: "Ready-to-Use Tools",
+      desc: "What you actually get out of this is a toolkit full of different tools and information on how to carry these steps out with different stakeholders practically. All you have to do is bring people together and follow the activities, without rebuilding the wheel from scratch or redefining how you and your team work.",
+      icon: <WrenchScrewdriverIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Build Your Team's Capabilities",
+      desc: "Not only does the framework and toolkit help with your current projects, it also helps train you and your team so that you can create human-centred and value-sensitive conversational AI more seamlessly going forward.",
+      icon: <AcademicCapIcon />,
     },
   ],
 };

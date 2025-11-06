@@ -9,6 +9,10 @@ interface BenefitsProps {
     title: string;
     desc: string;
     image: any;
+    link?: {
+      text: string;
+      href: string;
+    };
     bullets: {
       title: string;
       desc: string;
@@ -29,10 +33,8 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
               src={data.image}
               width={521}
               height={521}
-              alt="Benefits"
+              alt={data.title}
               className={"object-cover"}
-              placeholder="blur"
-              blurDataURL={data.image.src}
             />
           </div>
         </div>
@@ -59,6 +61,16 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
                 </Benefit>
               ))}
             </div>
+            {data.link && (
+              <div className="mt-8">
+                <a
+                  href={data.link.href}
+                  className="text-lg font-medium text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+                >
+                  {data.link.text} →
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </Container>
