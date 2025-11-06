@@ -51,6 +51,12 @@ Deploy this template using [Vercel](https://vercel.com?utm_source=github&utm_med
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/surjithctly/nextly-template&project-name=nextly-template&repository-name=nextly-template)
 
+## Colors
+
+Primary: #276197
+Secondary: #47A9DC
+Accent: #EEA947
+
 
 ## Author
 
