@@ -44,7 +44,7 @@ const benefitTwo = {
   image: benefitTwoImg,
   link: {
     text: "Learn how to get involved",
-    href: "/get-involved",
+    href: "/contact",
   },
   bullets: [
     {

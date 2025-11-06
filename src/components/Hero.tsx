@@ -24,7 +24,7 @@ export const Hero = () => {
               src={heroImg}
               width="616"
               height="617"
-              className={"object-cover"}
+              className={"object-cover rounded-3xl"}
               alt="Design Conversational AI that Aligns with People's Values"
               loading="eager"
             />

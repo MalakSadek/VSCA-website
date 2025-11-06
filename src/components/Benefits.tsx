@@ -34,7 +34,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
               width={521}
               height={521}
               alt={data.title}
-              className={"object-cover"}
+              className={"object-cover rounded-3xl"}
             />
           </div>
         </div>

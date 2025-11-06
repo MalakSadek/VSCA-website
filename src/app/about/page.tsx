@@ -33,7 +33,7 @@ export default function About() {
                   width={400}
                   height={400}
                   alt="Malak Sadek"
-                  className="object-cover rounded-lg"
+                  className="object-cover rounded-3xl"
                 />
               </div>
             </div>

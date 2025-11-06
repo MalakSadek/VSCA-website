@@ -13,29 +13,23 @@ export const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-1">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:px-1">
         {/* Logo  */}
-        <Link href="/">
-          <Image
-            src="/Logo.png"
-            width="180"
-            alt="VSCA Logo"
-            height="48"
-            className="h-12 w-auto"
-          />
-        </Link>
-
-        {/* get started  */}
-        <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
-            <ThemeChanger />
-            <div className="hidden mr-3 lg:flex nav__item">
-              <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-                Get Started
-              </Link>
-            </div>
+        <div className="flex items-center lg:w-1/3">
+          <Link href="/">
+            <Image
+              src="/Logo.png"
+              width="180"
+              alt="VSCA Logo"
+              height="48"
+              className="h-12 w-auto rounded-lg"
+            />
+          </Link>
         </div>
-                
-        <Disclosure>
+
+        {/* Mobile menu button */}
+        <div className="flex items-center lg:hidden">
+          <Disclosure>
           {({ open }) => (
             <>
                 <Disclosure.Button
@@ -61,33 +55,36 @@ export const Navbar = () => {
                   </svg>
                 </Disclosure.Button>
 
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+                <Disclosure.Panel className="absolute top-full left-0 right-0 flex flex-col w-full p-4 bg-white dark:bg-trueGray-900 border-t border-gray-100 dark:border-trueGray-700">
                   <>
                     {navigation.map((item, index) => (
-                      <Link key={index} href={item.href} className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
+                      <Link key={index} href={item.href} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
                           {item.name}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
-                        Get Started
-                    </Link>
                   </>
                 </Disclosure.Panel>
             </>
           )}
-        </Disclosure>
+          </Disclosure>
+        </div>
         
-        {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
+        {/* Desktop menu - centered */}
+        <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-1/3">
+          <ul className="flex items-center space-x-3 list-none">
             {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
+              <li className="nav__item" key={index}>
                 <Link href={menu.href} className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
                     {menu.name}
                 </Link>
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Theme changer - right */}
+        <div className="flex items-center justify-end lg:w-1/3">
+          <ThemeChanger />
         </div>
 
       </nav>
