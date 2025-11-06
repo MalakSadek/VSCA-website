@@ -20,13 +20,15 @@
 ## TODOs
 
 * favicon not showing
-* change title of website
 * alignment between images and text bigger and between sections
 * apply new color theme
 * make contact form work
 * add questions above contact form
 * video alignment
 * add links to "about text"
+* explore bob background
+* add different colors sections for each section
+* add faces/avatars for testimonials
 
 
 ## Authors
