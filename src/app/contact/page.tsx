@@ -9,7 +9,7 @@ export default function Contact() {
           preTitle="Contact"
           title="Get in Touch"
         >
-          Have questions about the VSCA Framework? We'd love to hear from you.
+          Have questions about the VSCA Framework? We&apos;d love to hear from you.
         </SectionTitle>
         
         <div className="mt-10">

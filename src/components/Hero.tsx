@@ -10,7 +10,7 @@ export const Hero = () => {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Design Conversational AI that Aligns with People's Values
+              Design Conversational AI that Aligns with People&apos;s Values
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               You already know how to build great conversational AI. 
@@ -24,8 +24,7 @@ export const Hero = () => {
               src={heroImg}
               width="616"
               height="617"
-              className={"object-cover rounded-3xl"}
-              alt="Design Conversational AI that Aligns with People's Values"
+              alt="Design Conversational AI that Aligns with People&apos;s Values"
               loading="eager"
             />
           </div>
