@@ -29,6 +29,7 @@
 * explore bob background
 * add different colors sections for each section
 * add faces/avatars for testimonials
+* add actual publication
 
 
 ## Authors
