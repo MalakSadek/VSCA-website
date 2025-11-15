@@ -11,9 +11,9 @@ export function Footer() {
     { name: "Contact", href: "/contact" },
   ];
   return (
-    <div className="relative">
+    <div className="relative bg-primary-50 dark:bg-trueGray-900">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-4">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <div>
               <Link href="/">
@@ -27,7 +27,7 @@ export function Footer() {
               </Link>
             </div>
 
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
+            <div className="max-w-md mt-4 text-gray-800 dark:text-gray-400">
               The VSCA Framework (Value-Sensitive Conversational Agent Framework) helps you and your team develop conversational agents that align with the values of all stakeholders involved.
             </div>
           </div>
@@ -44,7 +44,7 @@ export function Footer() {
                   <LinkComponent
                     key={index}
                     {...linkProps}
-                    className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:focus:bg-trueGray-700"
+                    className="w-full px-4 py-2 text-gray-800 rounded-md dark:text-gray-300 hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:focus:bg-trueGray-700"
                   >
                     {item.name}
                   </LinkComponent>
@@ -53,8 +53,8 @@ export function Footer() {
             </div>
           </div>
           <div className="">
-            <div>Follow us</div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
+            <div className="text-gray-800 dark:text-gray-300">Follow us</div>
+            <div className="flex mt-5 space-x-5 text-gray-800 dark:text-gray-500">
               <a href="https://www.linkedin.com/in/malaksadek/" target="_blank" rel="noopener">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
@@ -71,7 +71,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
+        <div className="my-10 text-sm text-center text-gray-800 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. VSCA Framework.
         </div>
       </Container>

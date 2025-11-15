@@ -13,7 +13,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-primary-50 dark:bg-trueGray-900">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:px-1">
         {/* Logo  */}
         <div className="flex items-center lg:w-1/3">
@@ -35,7 +35,7 @@ export const Navbar = () => {
             <>
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
+                  className="px-2 py-1 text-gray-800 rounded-md lg:hidden hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export const Navbar = () => {
                   </svg>
                 </Disclosure.Button>
 
-                <Disclosure.Panel className="absolute top-full left-0 right-0 flex flex-col w-full p-4 bg-white dark:bg-trueGray-900 border-t border-gray-100 dark:border-trueGray-700">
+                <Disclosure.Panel className="absolute top-full left-0 right-0 flex flex-col w-full p-4 bg-primary-50 dark:bg-trueGray-900 border-t border-primary-200 dark:border-trueGray-700">
                   <>
                     {navigation.map((item, index) => {
                       const isExternal = item.href.startsWith('http');
@@ -65,7 +65,7 @@ export const Navbar = () => {
                         ? { href: item.href, target: '_blank', rel: 'noopener noreferrer' }
                         : { href: item.href };
                       return (
-                        <LinkComponent key={index} {...linkProps} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-primary focus:text-primary focus:bg-primary-100 dark:focus:bg-gray-800 focus:outline-none">
+                        <LinkComponent key={index} {...linkProps} className="w-full px-4 py-2 text-gray-800 rounded-md dark:text-gray-300 hover:text-primary focus:text-primary focus:bg-primary-100 dark:focus:bg-gray-800 focus:outline-none">
                           {item.name}
                         </LinkComponent>
                       );
