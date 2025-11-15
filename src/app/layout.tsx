@@ -12,13 +12,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "VSCA Framework",
   description: "The VSCA Framework (Value-Sensitive Conversational Agent Framework) helps you and your team develop conversational agents that align with the values of all stakeholders involved.",
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-    ],
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
