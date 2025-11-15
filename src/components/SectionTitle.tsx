@@ -5,6 +5,7 @@ interface SectionTitleProps {
   preTitle?: string;
   title?: string;
   align?: "left" | "center";
+  preTitleColor?: "primary" | "accent";
   children?: React.ReactNode;
 }
 
@@ -15,7 +16,9 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}>
       {props.preTitle && (
-        <div className="text-sm font-bold tracking-wider text-primary uppercase">
+        <div className={`text-sm font-bold tracking-wider uppercase ${
+          props.preTitleColor === "accent" ? "text-accent" : "text-primary"
+        }`}>
           {props.preTitle}
         </div>
       )}

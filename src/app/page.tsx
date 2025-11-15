@@ -36,6 +36,7 @@ export default function Home() {
         <SectionTitle
           preTitle="Hear from the creator"
           title="Learn more about the VSCA Framework"
+          preTitleColor="accent"
         >
           Watch this video to hear from the creator about the VSCA Framework and Toolkit.
         </SectionTitle>
@@ -47,6 +48,7 @@ export default function Home() {
         <SectionTitle
           preTitle="Testimonials"
           title="Here's what professionals said"
+          preTitleColor="accent"
         >
           Professionals who used the VSCA Framework & Toolkit share their experiences.
         </SectionTitle>

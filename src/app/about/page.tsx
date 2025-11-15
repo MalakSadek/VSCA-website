@@ -9,6 +9,7 @@ export default function About() {
         <SectionTitle
           preTitle="About"
           title="Research-Backed 🤝🏻 Practice-Based"
+          preTitleColor="accent"
         />
         
         <div className="mt-10 space-y-6 text-lg text-gray-600 dark:text-gray-300">
@@ -62,7 +63,7 @@ export default function About() {
                     href="https://malaksadekapps.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-medium text-primary hover:text-secondary dark:text-secondary dark:hover:text-secondary-300"
+                    className="text-lg font-medium text-accent hover:text-accent-600 dark:text-accent dark:hover:text-accent-400"
                   >
                     Learn more about her work →
                   </a>
