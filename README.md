@@ -1,15 +1,22 @@
 
-# VSCA Framework - Websites
+# VSCA Framework - Website
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [next-themes](https://github.com/pacocoursey/next-themes) (for dark/light mode)
+- Web3Form for contact form
 
 ## Usage
-
 
 1. Clone this Repository
 2. Navigate to the directory
 3. Install `npm install`
 4. Run locally: `npm run dev`
-5. Deploy to verccel
-
+5. Deploy to vercel
 
 ## Colour Scheme
 
@@ -29,8 +36,9 @@
 * [X] add different colors sections for each section
 * [X] add actual publication
 * [X] add faces/avatars for testimonials
-* [ ] different highlights for light/dark
+* [X] different highlights for light/dark
 * [X] default color is light, not dark
+* [ ] compress images
 
 
 ## Authors
