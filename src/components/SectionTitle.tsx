@@ -17,7 +17,7 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       }`}>
       {props.preTitle && (
         <div className={`text-sm font-bold tracking-wider uppercase ${
-          props.preTitleColor === "accent" ? "text-accent" : "text-primary"
+          props.preTitleColor === "accent" ? "text-primary dark:text-accent" : "text-primary"
         }`}>
           {props.preTitle}
         </div>

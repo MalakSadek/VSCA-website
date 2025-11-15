@@ -65,7 +65,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
               <div className="mt-8">
                 <a
                   href={data.link.href}
-                  className="text-lg font-medium text-accent hover:text-accent-600 dark:text-accent dark:hover:text-accent-400"
+                  className="text-lg font-medium text-primary hover:text-primary-600 dark:text-accent dark:hover:text-accent-400"
                 >
                   {data.link.text} →
                 </a>

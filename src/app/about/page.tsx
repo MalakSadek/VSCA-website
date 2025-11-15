@@ -15,7 +15,7 @@ export default function About() {
           
           <div className="mt-10 space-y-6 text-lg text-gray-600 dark:text-gray-300">
             <p>
-              The VSCA framework was born out of a <a href="https://www.imperial.ac.uk/design-engineering/study/phd/malak/" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-600 dark:text-accent dark:hover:text-accent-400 underline">Ph.D. project at Imperial College London</a>. Originally, the work was about making conversational AI more human-centred. As the project went on, one idea that kept coming up repeatedly was whether the project&apos;s outcomes would make concrete and measurable &apos;real-world&apos; impact. With the goal of avoiding being just another thesis put on a shelf, the VSCA Framework was born to <span className="relative inline-block">
+              The VSCA framework was born out of a <a href="https://www.imperial.ac.uk/design-engineering/study/phd/malak/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-600 dark:text-accent dark:hover:text-accent-400 underline">Ph.D. project at Imperial College London</a>. Originally, the work was about making conversational AI more human-centred. As the project went on, one idea that kept coming up repeatedly was whether the project&apos;s outcomes would make concrete and measurable &apos;real-world&apos; impact. With the goal of avoiding being just another thesis put on a shelf, the VSCA Framework was born to <span className="relative inline-block">
                 bridge the gap between research and practice
                 <svg
                   className="absolute -bottom-1 left-0 w-full"
@@ -82,7 +82,7 @@ export default function About() {
                       href="https://malaksadekapps.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-lg font-medium text-accent hover:text-accent-600 dark:text-accent dark:hover:text-accent-400"
+                      className="text-lg font-medium text-primary hover:text-primary-600 dark:text-accent dark:hover:text-accent-400"
                     >
                       Learn more about her work →
                     </a>
