@@ -19,7 +19,7 @@
 
 ## TODOs
 
-* [ ] favicon not showing
+* [X] favicon not showing
 * [X] alignment between images and text bigger and between sections
 * [X] apply new color theme
 * [X] make contact form work
@@ -29,6 +29,8 @@
 * [X] add different colors sections for each section
 * [X] add actual publication
 * [X] add faces/avatars for testimonials
+* [ ] different highlights for light/dark
+* [X] default color is light, not dark
 
 
 ## Authors
