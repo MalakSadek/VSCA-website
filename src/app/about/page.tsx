@@ -62,7 +62,7 @@ export default function About() {
                     href="https://malaksadekapps.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-medium text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+                    className="text-lg font-medium text-primary hover:text-secondary dark:text-secondary dark:hover:text-secondary-300"
                   >
                     Learn more about her work →
                   </a>

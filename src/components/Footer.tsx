@@ -7,6 +7,7 @@ export function Footer() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Research", href: "https://www.tandfonline.com/doi/full/10.1080/10447318.2024.2426737" },
     { name: "Contact", href: "/contact" },
   ];
   return (
@@ -33,15 +34,22 @@ export function Footer() {
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item, index) => {
+                const isExternal = item.href.startsWith('http');
+                const LinkComponent = isExternal ? 'a' : Link;
+                const linkProps = isExternal 
+                  ? { href: item.href, target: '_blank', rel: 'noopener noreferrer' }
+                  : { href: item.href };
+                return (
+                  <LinkComponent
+                    key={index}
+                    {...linkProps}
+                    className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  >
+                    {item.name}
+                  </LinkComponent>
+                );
+              })}
             </div>
           </div>
           <div className="">
@@ -54,6 +62,10 @@ export function Footer() {
               <a href="https://malaksadekapps.com" target="_blank" rel="noopener">
                 <span className="sr-only">Website</span>
                 <Website />
+              </a>
+              <a href="https://scholar.google.com/citations?hl=en&user=-0Sh_uAAAAAJ" target="_blank" rel="noopener">
+                <span className="sr-only">Google Scholar</span>
+                <AcademicHat />
               </a>
             </div>
           </div>
@@ -94,6 +106,24 @@ const Website = ({ size = 24 }) => (
     <circle cx="12" cy="12" r="10" />
     <line x1="2" y1="12" x2="22" y2="12" />
     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+  </svg>
+);
+
+const AcademicHat = ({ size = 24 }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+    <line x1="6" y1="12" x2="18" y2="12" />
   </svg>
 );
 

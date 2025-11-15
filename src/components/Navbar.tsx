@@ -8,6 +8,7 @@ export const Navbar = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Research", href: "https://www.tandfonline.com/doi/full/10.1080/10447318.2024.2426737" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -34,7 +35,7 @@ export const Navbar = () => {
             <>
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
+                  className="px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -57,11 +58,18 @@ export const Navbar = () => {
 
                 <Disclosure.Panel className="absolute top-full left-0 right-0 flex flex-col w-full p-4 bg-white dark:bg-trueGray-900 border-t border-gray-100 dark:border-trueGray-700">
                   <>
-                    {navigation.map((item, index) => (
-                      <Link key={index} href={item.href} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
+                    {navigation.map((item, index) => {
+                      const isExternal = item.href.startsWith('http');
+                      const LinkComponent = isExternal ? 'a' : Link;
+                      const linkProps = isExternal 
+                        ? { href: item.href, target: '_blank', rel: 'noopener noreferrer' }
+                        : { href: item.href };
+                      return (
+                        <LinkComponent key={index} {...linkProps} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-primary focus:text-primary focus:bg-primary-100 dark:focus:bg-gray-800 focus:outline-none">
                           {item.name}
-                      </Link>
-                    ))}
+                        </LinkComponent>
+                      );
+                    })}
                   </>
                 </Disclosure.Panel>
             </>
@@ -72,13 +80,20 @@ export const Navbar = () => {
         {/* Desktop menu - centered */}
         <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-1/3">
           <ul className="flex items-center space-x-3 list-none">
-            {navigation.map((menu, index) => (
-              <li className="nav__item" key={index}>
-                <Link href={menu.href} className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+            {navigation.map((menu, index) => {
+              const isExternal = menu.href.startsWith('http');
+              const LinkComponent = isExternal ? 'a' : Link;
+              const linkProps = isExternal 
+                ? { href: menu.href, target: '_blank', rel: 'noopener noreferrer' }
+                : { href: menu.href };
+              return (
+                <li className="nav__item" key={index}>
+                  <LinkComponent {...linkProps} className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:focus:bg-gray-800">
                     {menu.name}
-                </Link>
-              </li>
-            ))}
+                  </LinkComponent>
+                </li>
+              );
+            })}
           </ul>
         </div>
 

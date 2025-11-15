@@ -28,8 +28,8 @@
 * [ ] add links to "about text"
 * [ ] explore bob background
 * [ ] add different colors sections for each section
+* [X] add actual publication
 * [ ] add faces/avatars for testimonials
-* [ ] add actual publication
 
 
 ## Authors
