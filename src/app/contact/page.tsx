@@ -80,8 +80,10 @@ export default function Contact() {
         <SectionTitle
           preTitle="Contact"
           title="Get in Touch"
+          preTitleColor="accent"
         >
-          Have questions about the VSCA Framework? We&apos;d love to hear from you.
+          Interested in Training? Trying the Framework?  Having a Chat?<br />
+          Then Reach Out Below!
         </SectionTitle>
         
         <div className="mt-10">

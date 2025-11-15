@@ -20,16 +20,15 @@
 ## TODOs
 
 * [ ] favicon not showing
-* [ ] alignment between images and text bigger and between sections
-* [ ] apply new color theme
+* [X] alignment between images and text bigger and between sections
+* [X] apply new color theme
 * [X] make contact form work
-* [ ] add questions above contact form
-* [ ] video alignment
-* [ ] add links to "about text"
-* [ ] explore bob background
-* [ ] add different colors sections for each section
+* [X] add questions above contact form
+* [X] video alignment
+* [X] add links to "about text"
+* [X] add different colors sections for each section
 * [X] add actual publication
-* [ ] add faces/avatars for testimonials
+* [X] add faces/avatars for testimonials
 
 
 ## Authors
