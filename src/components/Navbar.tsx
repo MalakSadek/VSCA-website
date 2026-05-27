@@ -28,8 +28,29 @@ export const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile menu button */}
-        <div className="flex items-center lg:hidden">
+        {/* Desktop menu - centered */}
+        <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-1/3">
+          <ul className="flex items-center space-x-3 list-none">
+            {navigation.map((menu, index) => {
+              const isExternal = menu.href.startsWith('http');
+              const LinkComponent = isExternal ? 'a' : Link;
+              const linkProps = isExternal
+                ? { href: menu.href, target: '_blank', rel: 'noopener noreferrer' }
+                : { href: menu.href };
+              return (
+                <li className="nav__item" key={index}>
+                  <LinkComponent {...linkProps} className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:focus:bg-gray-800">
+                    {menu.name}
+                  </LinkComponent>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+
+        {/* Header controls - right */}
+        <div className="flex items-center justify-end gap-2 lg:w-1/3">
+          <ThemeChanger />
           <Disclosure>
           {({ open }) => (
             <>
@@ -61,7 +82,7 @@ export const Navbar = () => {
                     {navigation.map((item, index) => {
                       const isExternal = item.href.startsWith('http');
                       const LinkComponent = isExternal ? 'a' : Link;
-                      const linkProps = isExternal 
+                      const linkProps = isExternal
                         ? { href: item.href, target: '_blank', rel: 'noopener noreferrer' }
                         : { href: item.href };
                       return (
@@ -76,34 +97,8 @@ export const Navbar = () => {
           )}
           </Disclosure>
         </div>
-        
-        {/* Desktop menu - centered */}
-        <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-1/3">
-          <ul className="flex items-center space-x-3 list-none">
-            {navigation.map((menu, index) => {
-              const isExternal = menu.href.startsWith('http');
-              const LinkComponent = isExternal ? 'a' : Link;
-              const linkProps = isExternal 
-                ? { href: menu.href, target: '_blank', rel: 'noopener noreferrer' }
-                : { href: menu.href };
-              return (
-                <li className="nav__item" key={index}>
-                  <LinkComponent {...linkProps} className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-primary focus:text-primary focus:bg-primary-100 focus:outline-none dark:focus:bg-gray-800">
-                    {menu.name}
-                  </LinkComponent>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        {/* Theme changer - right */}
-        <div className="flex items-center justify-end lg:w-1/3">
-          <ThemeChanger />
-        </div>
 
       </nav>
     </div>
   );
 }
-

@@ -106,9 +106,9 @@ export default function RootLayout({
         />
         <ThemeProvider attribute="class" defaultTheme="light">
           <Navbar />
-          <Analytics/> 
           <div>{children}</div>
           <Footer />
+          <Analytics/> 
         </ThemeProvider>
       </body>
     </html>
